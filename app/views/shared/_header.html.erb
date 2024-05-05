@@ -1,0 +1,43 @@
+<header class="header header_style_01">
+    <nav class="megamenu navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/logos/logo.png" alt="image"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <%= nav_link name: "Home", path: root_path, provided_name: yield(:provided_name) %>
+                    </li>
+                    <li>
+                        <%= nav_link name: "About Us", path: about_us_path, provided_name: yield(:provided_name) %>
+                    </li>
+                    <li>
+                        <%= nav_link name: "Our Services", path: our_services_path, provided_name: yield(:provided_name) %>
+                    </li>
+                    <li>
+                        <%= nav_link name: "Portfolio", path: portfolio_path, provided_name: yield(:provided_name) %>
+                    </li>
+                    <li>
+                        <%= nav_link name: "Features", path: features_path, provided_name: yield(:provided_name) %>
+                    </li>
+                    <li>
+                        <%= nav_link name: "Testimonials", path: testimonials_path, provided_name: yield(:provided_name) %>
+                    </li>
+                    <li>
+                        <%= nav_link name: "Pricing", path: pricing_path, provided_name: yield(:provided_name) %>
+                    </li>
+                    <li>
+                        <%= nav_link name: "Contact", path: contact_path, provided_name: yield(:provided_name) %>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

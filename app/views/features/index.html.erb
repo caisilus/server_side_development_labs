@@ -1,0 +1,14 @@
+<% provide :provided_name, "Features" %>
+
+<%= banner_for name: "Features", path: features_path %>
+
+<div id="features" class="section wb">
+    <div class="container">
+        <%= render partial: "features/title" %>
+        <%= render partial: "features/row" %>
+        <hr class="hr1">
+        <%= render partial: "features/promo_with_images" %>
+    </div>
+</div>
+
+<%= render partial: "shared/testimonials" %>
