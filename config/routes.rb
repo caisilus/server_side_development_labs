@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   get "testimonials", to: "testimonials#index"
   get "pricing", to: "pricing#index"
   get "contact", to: "contact#index"
+  post "contact", to: "contact#create"
 end
