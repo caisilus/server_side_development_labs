@@ -7,3 +7,13 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Testimonial.create_with(
+  name: "James Fernando", ocupation: "Manager of Racer", image_url: "uploads/testi_01.png",
+  title: "Wonderful Support", description: "They have got my project on time with the competition with a sed highly skilled, and experienced & professional team."
+).find_or_create_by(name: "James Fernando")
+
+Testimonial.create_with(
+  name: "Jacues Philips", ocupation: "Designer", image_url: "uploads/testi_02.png",
+  title: "Awesome Services!", description: "Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed."
+).find_or_create_by(name: "Jacues Philips")

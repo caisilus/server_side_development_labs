@@ -1,5 +1,27 @@
 <% provide :provided_name, "Testimonials" %>
 
 <%= banner_for name: "Testimonials", path: testimonials_path %>
-<%= render partial: "testimonials/textbox" %>
-<%= render partial: "testimonials/testimonials" %>
+
+<%= render partial: "testimonials/form", locals: {testimonial: @testimonial} %>
+
+<div id="test-box" class="section wb nopadtop">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Testimonials</h3>
+            <p class="lead">We thanks for all our awesome testimonials! There are hundreds of our happy customers! <br>Let's see what others say about GoodWEB Solutions website template!</p>
+        </div><!-- end title -->
+        
+        <%= render partial: "shared/testimonials" %>
+    </div><!-- end container -->
+</div><!-- end section -->
+
+<div id="clients" class="parallax section db parallax-off" style="background-image:url('uploads/parallax_04.jpg');">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Our Clients</h3>
+            <p class="lead">We thanks for all our awesome testimonials! There are hundreds of our happy customers! <br>Let's see what others say about GoodWEB Solutions website template!</p>
+        </div><!-- end title -->
+
+        <%= render partial: "shared/logos" %>
+    </div><!-- end container -->
+</div><!-- end section -->

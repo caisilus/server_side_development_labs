@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get "portfolio", to: "portfolio#index"
   get "features", to: "features#index"
   get "testimonials", to: "testimonials#index"
+  post "testimonials", to: "testimonials#create"
   get "pricing", to: "pricing#index"
   get "contact", to: "contact#index"
   post "contact", to: "contact#create"
