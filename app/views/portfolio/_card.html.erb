@@ -1,0 +1,9 @@
+<div class="post-media pitem item-w1 item-h1 <%= card_data["filter"] %>">
+    <%= link_to card_data["image_path"], data_rel: "prettyPhoto[gal]" do %>
+        <%= tag :image, src: card_data["image_path"], class: "img-responsive" %>
+        <div>
+            <h3><%= card_data["title"] %> <small><%= card_data["category"] %></small></h3>
+            <i class="flaticon-unlink"></i>
+        </div>
+    <% end %>
+</div>

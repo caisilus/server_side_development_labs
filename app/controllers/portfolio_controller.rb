@@ -1,3 +1,6 @@
 class PortfolioController < ApplicationController
-  def index ; end
+  include JsonDataInitializable
+
+  def index
+  end
 end
